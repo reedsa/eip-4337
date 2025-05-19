@@ -1,0 +1,22 @@
+[project]
+name = "eip-4337"
+version = "0.1.0"
+description = "EIP-4337 account abstraction example"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "eth-utils>=5.3.0",
+    "inquirerpy>=0.3.4",
+    "py-solc-x>=2.0.3",
+    "titanoboa>=0.2.6",
+    "vyper>=0.4.1",
+    "web3>=7.11.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+eip4337 = "eip_4337.cli:start"
